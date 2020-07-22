@@ -36,8 +36,8 @@
             </ul>
         </div>
     </nav>
-    <div class="container sect-format mt-5">
-        <p class="display-3 mt-5">Hi, I'm <t class="font-weight-bold">Chandler</t>
+    <div class="container sect-format my-5">
+        <p class="display-3">Hi, I'm <t class="font-weight-bold">Chandler</t>
         </p>
         <p class="display-4">a Software Developer.</p>
         <p>
@@ -50,6 +50,127 @@
         </p>
         <p class="square fade-in-out"></p>
     </div>
+
+    <div class="about-format container-fluid bg-dark fade-in my-5">
+        <div class="row flex-fill h100">
+            <div class="col-sm-3 h-50">
+                <div class="mt-5 ml-5">
+                    <img id="profile-pic" src="{% static 'images/profile.jpg' %}">
+                </div>
+            </div>
+            <div class="col-sm-3 h-25 display-5 text-justify" style="color: white;">
+                <p class="display-4 mt-3 font-weight-bold">About Me</p>
+            <div class="display-5">
+                <p> 
+                    I currently work as a Python Developer, developing ERP open-source software. 
+                    I'm also enrolled in Lewis University completing a MS in Data Science.
+                </p>
+                <p>
+                    As a Software Developer I enjoy building things, like this website. 
+                    As a Data Scientist, I enjoy answering research questions. Lately I've been trying
+                    to combine these two interests.
+                </p>
+                <span>
+                    <a href="https://drive.google.com/file/d/1Ijdseg_cOldxHJHULeQ8b75OZ4faT_Xj/view?usp=sharing">
+                        <button type="button" class="btn btn-primary mb-5">
+                            View My Resume
+                        </button>
+                    </a>
+                </span>
+            </div>
+            </div>
+            <div class="col-sm-3 h-25 display-5 mt-6 ml-3 text-justify" style="color: white;">
+                <p> 
+                    Here's the technologies I've been working with recently:
+                </p>
+                <ul>
+                    <li>Html & CSS</li>
+                    <li>XML</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Odoo</li>
+                    <li>Postgresql</li>
+                    <li>Google Cloud</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects-section"class="container projects-format my-5">
+        <p class="display-4 mb-5 font-weight-bold">Projects</p>
+        <div class="row ml-3">
+            <div class="col-md-6">
+                <div class="card card-body h-100 text-justify border-info fade-in">
+                    <h4 class="text-center">Portfolio Website</h4>
+                    <hr>
+                    <p>This website is divided in four pages. The home page contains the home section, and the about and projects contains their respective sections.
+                        Then there's the contact page which contains a contact form implemented in Django using a SQLite database.
+                    </p>
+                    <p>I built this website using Django as the backend and using Html & CSS with the help of Bootstrap for the views.
+                        For deployment I'm using a Google Cloud Ubuntu VM instance which hosts my other projects. For more
+                        details, here's the <a href="https://github.com/chancald"><u>Github</u></a> repo of this project:
+                    </p>
+                    <a class="text-center" href="https://github.com/chancald/personal-website"><img class="social" src="{% static 'images/github-logo.png' %}"></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body h-100 border-info text-justify fade-in-4">
+                    <h4 class="text-center">Odoo Server</h4>
+                    <hr>
+                    <p>
+                        Deployed an Odoo 13 server in a Google Cloud Ubuntu VM instance to showcase and demo Odoo apps
+                        developed by me using the Odoo framework and creating custom modules using Python, XML and CSV files.
+                    </p>
+                    <p>
+                        This Odoo instance can be accessed through this <a class="text-center" href="https://github.com/chancald/personal-website"><u>link</u></a>.
+                        
+                    </p>
+                    <ul>
+                        <li>Username: demo</li>
+                        <li>Password: demo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="card card-body h-100 border-info text-justify fade-in-5">
+                    <h4 class="text-center">Odoo App - Loan Request App</h4>
+                    <hr>
+                    <p>
+                        This app allows the creation of loan requests after the purchase of any product. The main view is a template
+                        with a form to be filled only with the client's necessary information. The values in the form are then used
+                        to create reports, like loan request contracts that can be printed.
+                    </p>
+                    <p>
+                        Here's the app github repository:
+                    </p>
+                    <p>  
+                        The app can be accesed through this link:
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container sect-format text-justify fade-in my-5">
+        <p class="display-4 mt-3 text-center font-weight-bold">Contact Me</p>
+        <form action="/contact" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="name" class="form-control" id="name" name="name" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+            <label for="text">Message</label>
+            <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send</button>
+        </form>
+    </div>
+
 </body>
 </html>
   
