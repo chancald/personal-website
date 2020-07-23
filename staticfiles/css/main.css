@@ -121,8 +121,6 @@
 	height: auto;
   border-radius: 100%;
   max-width: 100%;
-	margin-left: auto;
-  margin-right: auto;
 }
 .nobull {
   list-style-type: none;
