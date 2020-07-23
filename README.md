@@ -5,6 +5,7 @@ This is the repo of my personal website and portfolio www.chandlercalderon.com. 
 ### TODO
 - [x] Add Odoo-server link and app link.
 - [x] Make website responsive to mobile devices.
+- [ ] Clean CSS file.
 - [ ] Make website interactive with Javascript.
 
 ### Contact
