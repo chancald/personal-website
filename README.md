@@ -1,6 +1,6 @@
 # personal-website
 
-This is the repo of my personal website and portfolio www.chandlercalderon.com. It was made from scratch using Django for the backend and Html, CSS and Bootstrap for the frontend. Django was deployed using a Google Cloud Ubuntu 20.04 instance with the Nginx to set-up the domain name.
+This is the repo of my personal website and portfolio www.chandlercalderon.com. It was made from scratch using Django for the backend and Html, CSS and Bootstrap for the frontend. Django was deployed using a Google Cloud Ubuntu 20.04 instance with the help of Nginx.
 
 ### TODO
 - Add Odoo-server link and app link.

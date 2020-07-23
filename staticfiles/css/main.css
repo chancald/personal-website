@@ -1,3 +1,6 @@
+.bac-color {
+  background-color: rgb(28, 62, 126);
+}
 .square {
   height: 5px;
   width: 550px;
@@ -117,9 +120,9 @@
 	text-align: center;
 }
 #profile-pic{
-	width: 200px;
-	height: 200px;
-	border-radius: 100%;
+	height: auto;
+  border-radius: 100%;
+  max-width: 100%;
 	margin-left: auto;
   margin-right: auto;
 }

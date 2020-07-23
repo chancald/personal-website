@@ -14,72 +14,81 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark border-bottom">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark border-bottom">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                    <a href="#home-section" class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <a href="#about-section" class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/projects">Projects</a>
+                    <a href="#projects-section" class="nav-link" href="/projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a href="#contact-section" class="nav-link" href="/contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container sect-format mt-6">
-        <p class="display-3">Hi, I'm <t class="font-weight-bold">Chandler</t>
-        </p>
-        <p class="display-4">a Software Developer.</p>
-        <p>
-            <a href="https://github.com/chancald">
-                <img class="social" src="{% static 'images/github-logo.png' %}">
-            </a>
-            <a href="https://www.linkedin.com/in/chandler-calderon-813768144/">
-                <img class="social" src="{% static 'images/linkedin-logo.png' %}" height="50px">
-            </a>
-        </p>
-        <p class="square fade-in-out"></p>
+    <div id="home-section" class="container-md" style="padding-top:70px; margin-bottom:400px; margin-top:100px">
+        <div class="row text-center">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <p class="display-3">Hi, I'm <t class="font-weight-bold">Chandler</t>
+                </p>
+                <p class="display-4">a Software Developer.</p>
+                <p>
+                    <a href="https://github.com/chancald">
+                        <img src="{% static 'images/github-logo.png' %}">
+                    </a>
+                    <a href="https://www.linkedin.com/in/chandler-calderon-813768144/">
+                        <img  src="{% static 'images/linkedin-logo.png' %}" height="50px">
+                    </a>
+                </p>
+                <p class="text-center fade-in-out" style="padding-top:50px;">
+                    <img src="{% static 'images/chevron-bottom-8x.png' %}">
+                </p>
+            </div>
+        </div>
     </div>
 
-    <div class="about-format container-fluid bg-dark fade-in mt-6">
-        <div class="row flex-fill h100">
-            <div class="col-sm-3 h-50">
-                <div class="mt-5 ml-5">
+    <div id="about-section" class="container-sm-fluid bg-dark fade-in" style="padding-top:70px;padding-bottom:70px">
+        <div class="row">
+
+            <div class="col-sm-3 ml-4 mr-2 mt-3">
+                <div class="">
                     <img id="profile-pic" src="{% static 'images/profile.jpg' %}">
                 </div>
             </div>
-            <div class="col-sm-3 h-25 display-5 text-justify" style="color: white;">
-                <p class="display-4 mt-3 font-weight-bold">About Me</p>
-            <div class="display-5">
-                <p> 
-                    I currently work as a Python Developer, developing ERP open-source software. 
-                    I'm also enrolled in Lewis University completing a MS in Data Science.
-                </p>
-                <p>
-                    As a Software Developer I enjoy building things, like this website. 
-                    As a Data Scientist, I enjoy answering research questions. Lately I've been trying
-                    to combine these two interests.
-                </p>
-                <span>
-                    <a href="https://drive.google.com/file/d/1Ijdseg_cOldxHJHULeQ8b75OZ4faT_Xj/view?usp=sharing">
-                        <button type="button" class="btn btn-primary mb-5">
-                            View My Resume
-                        </button>
-                    </a>
-                </span>
+            <div class="col-sm-4 mx-3 text-justify" style="color: white;">
+                <p class="display-4 font-weight-bold">About Me</p>
+                <div class="display-5  lead"  style="color: white;">
+                    <p> 
+                        I currently work as a Python Developer, developing ERP open-source software. 
+                        I'm also enrolled in Lewis University completing a MS in Data Science.
+                    </p>
+                    <p>
+                        As a Software Developer I enjoy building things, like this website. 
+                        As a Data Scientist, I enjoy answering research questions. Lately I've been trying
+                        to combine these two interests.
+                    </p>
+                    <span>
+                        <a href="https://drive.google.com/file/d/1Ijdseg_cOldxHJHULeQ8b75OZ4faT_Xj/view?usp=sharing">
+                            <br/><button type="button" class="btn btn-primary mb-5">
+                                View My Resume
+                            </button>
+                        </a>
+                    </span>
+                </div>
             </div>
-            </div>
-            <div class="col-sm-3 h-25 display-5 mt-6 ml-3 text-justify" style="color: white;">
+            
+            <div class="col-sm-3 mx-3 mt-2 display-5 text-justify lead" style="color: white;">
                 <p> 
                     Here's the technologies I've been working with recently:
                 </p>
@@ -96,11 +105,12 @@
         </div>
     </div>
 
-    <div id="projects-section"class="container projects-format mt-6">
-        <p class="display-4 mb-5 font-weight-bold">Projects</p>
-        <div class="row ml-3">
-            <div class="col-md-6">
-                <div class="card card-body h-100 text-justify border-info fade-in">
+    <div id="projects-section" class="container-sm" style="margin-top:200px; margin-bottom:200px;">
+        <div><p class="display-4 font-weight-bold text-center" >Projects</p></div>
+        <div class="row" >
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <div class="m-3 card card-body h-70 text-justify border-info fade-in">
                     <h4 class="text-center">Portfolio Website</h4>
                     <hr>
                     <p>This website is divided in four pages. The home page contains the home section, and the about and projects contains their respective sections.
@@ -113,8 +123,8 @@
                     <a class="text-center" href="https://github.com/chancald/personal-website"><img class="social" src="{% static 'images/github-logo.png' %}"></a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card card-body h-100 border-info text-justify fade-in-4">
+            <div class="col-sm-5">
+                <div class="m-3 card card-body h-70 border-info text-justify fade-in-4">
                     <h4 class="text-center">Odoo Server</h4>
                     <hr>
                     <p>
@@ -130,9 +140,7 @@
                         <li>Password: demo</li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-md-6 mt-3">
-                <div class="card card-body h-100 border-info text-justify fade-in-5">
+                <div class="m-3 card card-body h-70 border-info text-justify fade-in-5">
                     <h4 class="text-center">Odoo App - Loan Request App</h4>
                     <hr>
                     <p>
@@ -148,10 +156,12 @@
                     </p> 
                 </div>
             </div>
+            <div class="col-sm-1"></div>
+            
         </div>
     </div>
 
-    <div class="container sect-format text-justify fade-in my-5">
+    <div id="contact-section" class="container-sm fade-in" style="margin-bottom:200px;">
         <p class="display-4 mt-3 text-center font-weight-bold">Contact Me</p>
         <form action="/contact" method="post">
             {% csrf_token %}
