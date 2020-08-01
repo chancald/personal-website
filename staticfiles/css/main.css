@@ -146,8 +146,6 @@
 }
 #profile-pic{
 	height: auto;
-  border-radius: 100%;
-  max-width: 100%;
 }
 .nobull {
   list-style-type: none;
