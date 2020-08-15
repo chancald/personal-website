@@ -5,6 +5,7 @@ def home(request):
     if request.method=="POST":
         name = request.POST['name']
         email = request.POST['email']
+        phone = request.POST['phone']
         desc = request.POST['desc']
         contact = Contact(name=name, email=email, desc=desc)
         contact.save()

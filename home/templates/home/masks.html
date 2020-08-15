@@ -17,125 +17,250 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark border-bottom">
+        <a class="navbar-brand mb-0 mt-0 p-0" href="#">
+            <img src="{% static 'images/mask-logo2.png' %}" height="30px">
+          </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="#home-section" class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a href="#masks-section" class="nav-link" href="/about">Mascarillas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about-section" class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects-section" class="nav-link" href="/projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact-section" class="nav-link" href="/contact">Contact</a>
+                    <a href="#contact-section" class="nav-link" href="/contact">Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div id="home-section" class="container-md" style="padding-top:70px; margin-bottom:400px; margin-top:100px">
-        <div class="row text-center">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <p class="display-3">Mascarillas Doña Mari<t class="font-weight-bold"></t>
+
+    <div id="home-section" class="container-md" style="padding-top:70px;">
+        <div class="row text-center fade-in">
+            <div class="col">
+                <p class="display-3">Mascarillas Doña Mari<t class="font-weight-bold">
                 </p>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row ">
-            <div class="col-sm-4">
-                <div class="card m-3" style="width: 18rem;">
-                    <img src="{% static 'images/mask1.jpeg' %}" class="card-img-top">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card m-3" style="width: 18rem;">
-                    <img src="{% static 'images/mask2.jpeg' %}" class="card-img-top">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card m-3" style="width: 18rem;">
-                    <img src="{% static 'images/mask3.jpeg' %}" class="card-img-top">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
+    <div >
+        <div class="bg-dark text-center fade-in-4">
+            <img class="mb-4 mt-4" src="{% static 'images/mask-logo2.png' %}" height="200px">
         </div>
-        <div class="row ">
-            <div class="col-sm-4">
-                <div class="card m-3" style="width: 18rem;">
-                    <img src="{% static 'images/mask4.jpeg' %}" class="card-img-top">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+
+    <div id="masks-section" class="container-md" style="padding-top:70px;">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-4">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="{% static 'images/mask1.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="{% static 'images/mask2.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="{% static 'images/mask3.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card m-3" style="width: 18rem;">
-                    <img src="{% static 'images/mask5.jpeg' %}" class="card-img-top">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="row ">
+                <div class="col-sm-4">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="{% static 'images/mask4.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="{% static 'images/mask5.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="{% static 'images/mask6.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card m-3" style="width: 18rem;">
-                    <img src="{% static 'images/mask6.jpeg' %}" class="card-img-top">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="row ">
+                <div class="col-sm-4">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="{% static 'images/mask7.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col-sm-4">
-                <div class="card m-3" style="width: 18rem;">
-                    <img src="{% static 'images/mask7.jpeg' %}" class="card-img-top">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="col-sm-4">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="{% static 'images/mask8.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card m-3" style="width: 18rem;">
-                    <img src="{% static 'images/mask8.jpeg' %}" class="card-img-top">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card m-3" style="width: 18rem;">
-                    <img src="{% static 'images/mask9.jpeg' %}" class="card-img-top">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="col-sm-4">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="{% static 'images/mask9.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div id="contact-section" class="container-sm" style="padding-top:70px; margin-bottom:200px;">
+        <p class="display-4 mt-3 text-center font-weight-bold">Contacto</p>
+        <form action="/contact" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+            <label for="exampleFormControlInput1">Nombre</label>
+            <input type="name" class="form-control" id="name" name="name" placeholder="Su nombre">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Teléfono</label>
+                <input type="email" class="form-control" id="phone" name="phone" placeholder="809-544-4444">
+            </div>
+            <div class="form-group">
+            <label for="text">Mensaje</label>
+            <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
+
   </div>
 </body>
+<!-- Footer -->
+<footer class="page-footer bg-dark font-small mdb-color lighten-3 pt-4" style="color: white;">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Descripcion</h5>
+          <p>Mascarillas de telas personalizadas. Puede elegir la tela, el color y el tamano. Hechas a mano.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Contacto</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <a href="#!">chandler240@gmail.com</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#!">809-544-4444</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#!">809-555-5555</a>
+              </p>
+            </li>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Dirección</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+            <p>Villa Marina, Distrito Nacional, República Dominicana</p>
+            </li>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+  
+          <!-- Social buttons -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Siguenos</h5>
+  
+        
+        <a href="">
+            
+            <img src="{% static 'images/instagram-logo.png' %}" height="35px">
+        </a>
+        <br>
+        <a href="">
+            <img  src="{% static 'images/whatsapp-logo.png' %}" height="35px">
+        </a>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/">chandlercalderon.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 </html>
