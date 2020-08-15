@@ -1,3 +1,8 @@
+.img {
+  width: 100%;
+  height: auto;
+}
+
 .chevron::before {
 	border-style: solid;
 	border-width: 0.25em 0.25em 0 0;
@@ -145,7 +150,10 @@
 	text-align: center;
 }
 #profile-pic{
-	height: auto;
+  height: auto;
+  border-radius: 100%;
+  max-width: 100%;
+  
 }
 .nobull {
   list-style-type: none;
