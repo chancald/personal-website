@@ -7,6 +7,8 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700" rel="stylesheet">
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -15,7 +17,7 @@
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
    <title>Mascarillas </title>
 </head>
-<body>
+<body style='background-color: #FFEBCD;'>
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark border-bottom">
         <a class="navbar-brand mb-0 mt-0 p-0" href="#">
             <img src="{% static 'images/mask-logo2.png' %}" height="30px">
@@ -34,131 +36,131 @@
             </ul>
         </div>
     </nav>
-
-    <div id="home-section" class="container-md" style="padding-top:70px;">
-        <div class="bg-dark text-center fade-in-4"  >
-            <p class="display-2" style="color: #FFEFD5;">Mascarillas & Más<t class="font-weight-bold" ></t>
+    <div class="bg-dark text-center fade-in-4 p-5" style="color: white">
+        <div class="display-2">
+            <span>Mascarillas & Más</span>
             <img class="mb-4 mt-4" src="{% static 'images/mask-logo2.png' %}" height="100px">
+
+        </div>
+        <div class="text-center" style="font-size: 25px;">
+            Mascarillas de tela personalizadas<br>
+            Puedes elegir tela, color y tamaño especifico<br>
+            Hechas a mano
         </div>
     </div>
 
-    <div id="masks-section" class="container-md" style="padding-top:70px;">
-        <div class="container">
-            <div class="row ">
-                <div class="col-sm-4">
-                    <div class="card m-3" style="width: 18rem;">
-                        <img src="{% static 'images/mask1.jpg' %}" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Original</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card m-3" style="width: 18rem;">
-                        <img src="{% static 'images/mask2.jpg' %}" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Ninja</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card m-3" style="width: 18rem;">
-                        <img src="{% static 'images/mask3.jpg' %}" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Original</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
+    
+    <div id="masks-section" class="container p-3" style="background-color: white;">
+        <div class="row ">
+            <div class="col-sm-4">
+                <div class="card m-3 text-center">
+                    <img src="{% static 'images/mask1.jpg' %}" class="card-img-top">
+                    <div class="card-body"  style="font-size: 30px;">
+                        <b class="card-title">Original</b><br>
+                        <span>Crema</span><br>
+                        <b>RD$450</b>
                     </div>
                 </div>
             </div>
-            <div class="row ">
-                <div class="col-sm-4">
-                    <div class="card m-3" style="width: 18rem;">
-                        <img src="{% static 'images/mask4.jpg' %}" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Original</h5>
-                        <h5>RD$450</h5>    
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card m-3" style="width: 18rem;">
-                        <img src="{% static 'images/mask5.jpg' %}" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Original</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card m-3" style="width: 18rem;">
-                        <img src="{% static 'images/mask6.jpg' %}" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Ninja</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
+            <div class="col-sm-4">
+                <div class="card m-3 text-center">
+                    <img src="{% static 'images/mask2.jpg' %}" class="card-img-top">
+                    <div class="card-body"  style="font-size: 30px;">
+                        <b class="card-title">Ninja</b><br>
+                        <span>Negro</span><br>
+                        <b>RD$300</b>
                     </div>
                 </div>
             </div>
-            <div class="row ">
-                <div class="col-sm-4">
-                    <div class="card m-3" style="width: 18rem;">
-                        <img src="{% static 'images/mask7.jpg' %}" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Original</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
+            <div class="col-sm-4">
+                <div class="card m-3 text-center">
+                    <img src="{% static 'images/mask3.jpg' %}" class="card-img-top">
+                    <div class="card-body"  style="font-size: 30px;">
+                        <b class="card-title">Original</b><br>
+                        <span>Rojo</span><br>
+                        <b>RD$300</b>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="card m-3" style="width: 18rem;">
-                        <img src="{% static 'images/mask8.jpg' %}" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Pato</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4">
+                <div class="card m-3 text-center">
+                    <img src="{% static 'images/mask4.jpg' %}" class="card-img-top">
+                    <div class="card-body"  style="font-size: 30px;">
+                        <b class="card-title">Original</b><br>
+                        <span>Crema</span><br>
+                        <b>RD$450</b>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="card m-3" style="width: 18rem;">
-                        <img src="{% static 'images/mask9.jpg' %}" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Ninja</h5>
-                        Blanco
-                        <h5>RD$300</h5>
+            </div>
+            <div class="col-sm-4">
+                <div class="card m-3 text-center">
+                    <img src="{% static 'images/mask5.jpg' %}" class="card-img-top">
+                    <div class="card-body"  style="font-size: 30px;">
+                        <b class="card-title">Original</b><br>
+                        <span>Azul Marino</span><br>
+                        <b>RD$300</b>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card m-3 text-center">
+                    <img src="{% static 'images/mask6.jpg' %}" class="card-img-top">
+                    <div class="card-body"  style="font-size: 30px;">
+                        <b class="card-title">Ninja</b><br>
+                        <span>Rojo</span><br>
+                        <b>RD$300</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-4">
+                <div class="card m-3 text-center">
+                    <img src="{% static 'images/mask7.jpg' %}" class="card-img-top">
+                    <div class="card-body"  style="font-size: 30px;">
+                        <b class="card-title">Original</b><br>
+                        <span>Blanco</span><br>
+                        <b>RD$300</b>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card m-3 text-center">
+                    <img src="{% static 'images/mask8.jpg' %}" class="card-img-top">
+                    <div class="card-body"  style="font-size: 30px;">
+                        <b class="card-title">Pato</b><br>
+                        <span>Blanco</span><br>
+                        <b>RD$300</b>
                         </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card m-3 text-center">
+                    <img src="{% static 'images/mask9.jpg' %}" class="card-img-top">
+                    <div class="card-body"  style="font-size: 30px;">
+                    <b class="card-title">Ninja</b><br>
+                    <span>Blanco</span><br>
+                    <b>RD$300</b>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
+
 </body>
 <!-- Footer -->
-<footer class="page-footer bg-dark font-small mdb-color lighten-3 pt-4" style="color: white;">
+<footer id="contact-section" class="page-footer bg-dark font-large mdb-color lighten-3 pt-4" style="font-size: 25px; color: white;">
 
     <!-- Footer Links -->
-    <div class="container text-center text-md-left">
+    <div class="container text-center" style="font-size: 25px;">
   
       <!-- Grid row -->
       <div class="row">
   
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-  
-          <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Descripcion</h5>
-          <p>Mascarillas de telas personalizadas. Puede elegir la tela, el color y el tamano. Hechas a mano.</p>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
   
           <!-- Links -->
           <h5 class="font-weight-bold text-uppercase mb-4">Contacto</h5>
@@ -183,9 +185,9 @@
   
         </div>
         <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
+      </div>
+        <hr class="clearfix w-100">
+    <div>
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
   
@@ -201,9 +203,7 @@
         <!-- Grid column -->
   
         <hr class="clearfix w-100 d-md-none">
-  
-  
-  
+        
       </div>
       <!-- Grid row -->
   
@@ -211,8 +211,8 @@
     <!-- Footer Links -->
   
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/">chandlercalderon.com</a>
+    <div class="footer-copyright text-center py-3" style="font-size: 20px;">© 2020 Copyright:
+      <a href="http://chandlercalderon.com/">chancald</a>
     </div>
     <!-- Copyright -->
   
