@@ -46,14 +46,14 @@
                 <p class="display-4">a Software Developer.</p>
                 <p>
                     <a href="https://github.com/chancald">
-                        <img src="{% static 'images/github-logo.png' %}">
+                        <img src="{% static 'images/github-logo.png' %}" alt="Github logo">
                     </a>
                     <a href="https://www.linkedin.com/in/chandler-calderon-813768144/">
-                        <img  src="{% static 'images/linkedin-logo.png' %}" height="50px">
+                        <img  src="{% static 'images/linkedin-logo.png' %}" height="60px" alt="Linkedin logo">
                     </a>
                 </p>
                 <p class="text-center fade-in-out" style="padding-top:50px;">
-                    <img class="fade-in-out" src="https://img.icons8.com/ios-filled/100/000000/chevron-down.png">
+                    <img class="fade-in-out" src="https://img.icons8.com/ios-filled/100/000000/chevron-down.png" alt="Chevron animation">
                 </p>
             </div>
         </div>
@@ -64,7 +64,7 @@
 
             <div class="col-sm-3 ml-4 mr-2 mt-3">
                 <div class="">
-                    <img id="profile-pic" src="{% static 'images/profile.jpg' %}">
+                    <img id="profile-pic" src="{% static 'images/profile.jpg' %}" alt="Profile picture">
                 </div>
             </div>
             <div class="col-sm-4 mx-3 text-justify" style="color: white;">
@@ -106,59 +106,53 @@
         </div>
     </div>
 
-    <div id="projects-section" class="container-sm" style="padding-top:70px; margin-top:200px; margin-bottom:150px;">
+    <div id="projects-section" class="container-sm" style="padding-top:70px; margin-top:200px; margin-bottom:150px; font-size: 20px;">
         <div><p class="display-4 font-weight-bold text-center" >Projects</p></div>
-        <div class="row" >
+        <div class="row">
             <div class="col-sm-1"></div>
-            <div class="col-sm-5">
-                <div class="m-3 card card-body h-70 text-justify border-info fade-in">
-                    <h4 class="text-center">Portfolio Website</h4>
-                    <hr>
-                    <p>This website is divided in four pages. The home page contains the home section, and the about and projects contains their respective sections.
-                        Then there's the contact page which contains a contact form implemented in Django using a SQLite database.
-                    </p>
-                    <p>I built this website using Django as the backend and using Html & CSS with the help of Bootstrap for the views.
-                        For deployment I'm using a Google Cloud Ubuntu VM instance which hosts my other projects. For more
-                        details, here's the <a href="https://github.com/chancald"><u>Github</u></a> repo of this project:
-                    </p>
-                    <a class="text-center" href="https://github.com/chancald/personal-website"><img class="social" src="{% static 'images/github-logo.png' %}"></a>
-                </div>
-            </div>
-            <div class="col-sm-5">
-                <div class="m-3 card card-body h-70 border-info text-justify fade-in-4">
+            <div class="col-sm-10">
+                <div class="m-3 card card-body h-70 border-info shadow text-justify fade-in-4">
                     <h4 class="text-center">Odoo Server</h4>
                     <hr>
                     <p>
-                        Deployed an Odoo 13 server in a Google Cloud Ubuntu VM instance to showcase and demo Odoo apps
-                        developed by me using the Odoo framework and creating custom modules using Python, XML and CSV files.
+                        Deployed an Odoo 13 server using a Google Cloud Ubuntu VM instance to showcase and demo Odoo modules.
+                        The modules were developed through the Odoo framework using Python, XML and CSV files.
                     </p>
                     <p>
-                        This Odoo instance can be accessed through this <a class="text-center" href="https://github.com/chancald/personal-website"><u>link</u></a>.
-                        
+                        This Odoo instance can be accessed through this <a class="text-center" href="http://chandlercalderon.com:2424/"><u>link</u></a>.
                     </p>
                     <ul>
                         <li>Username: demo</li>
                         <li>Password: demo</li>
                     </ul>
                 </div>
-                <div class="m-3 card card-body h-70 border-info text-justify fade-in-5">
-                    <h4 class="text-center">Odoo App - Loan Request App</h4>
-                    <hr>
-                    <p>
-                        This app allows the creation of loan requests after the purchase of any product. The main view is a template
-                        with a form to be filled only with the client's necessary information. The values in the form are then used
-                        to create reports, like loan request contracts that can be printed.
-                    </p>
-                    <p>
-                        Here's the app github repository:
-                    </p>
-                    <p>  
-                        The app can be accesed through this link:
-                    </p> 
-                </div>
             </div>
             <div class="col-sm-1"></div>
-            
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="m-3 card card-body h-70 border-info shadow text-justify fade-in-5">
+                    <h4 class="text-center">Odoo - Credit Request Module</h4>
+                    <hr>
+                    <p>
+                        This custom module allows the creation of credit requests of any product through Odoo's Sales app. The main view is a template
+                        with a form with the client's information. The values in the form are used
+                        to create reports, like loan request contracts.
+                    </p>
+                    <p>  
+                        The module can be demo through this link <a class="text-center" href="http://chandlercalderon.com:2424/web#view_type=list&model=sale.credit.request&menu_id=340&action=487"><u>link</u></a>.
+                        <ul>
+                            <li>Username: demo</li>
+                            <li>Password: demo</li>
+                        </ul>
+                    </p>
+                    <a href="https://github.com/chancald/credit_request"><img class="social" src="{% static 'images/github-logo.png' %}" height="50px" alt="Github logo"></a>
+    
+                    
+                       </div>
+            </div>
+            <div class="col-sm-1"></div>
         </div>
     </div>
 
