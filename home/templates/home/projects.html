@@ -1,0 +1,45 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div id="projects-section" class="fade-in">
+    <div id="header">
+    <p class="display-4 font-weight-bold text-center">
+        Projects
+    </p>
+    </div>
+    <div id="column-1" class="">
+        <h4 class="text-center">Odoo Server</h4>
+        <hr>
+        <p>
+            Deployed an Odoo 13 server using a Google Cloud Ubuntu VM instance to showcase and demo Odoo modules.
+            The modules were developed through the Odoo framework using Python, XML and CSV files.
+        </p>
+        <p>
+            This Odoo instance can be accessed through this <a class="text-center" href="http://chandlercalderon.com:2424/"><u>link</u></a>.
+        </p>
+        <ul>
+            <li>Username: demo</li>
+            <li>Password: demo</li>
+        </ul>
+    </div>
+    <div id="column-2">
+        <h4 class="text-center">Odoo - Credit Request Module</h4>
+        <hr>
+        <p>
+            This custom module allows the creation of credit requests of any product through Odoo's Sales app. The main view is a template
+            with a form with the client's information. The values in the form are used
+            to create reports, like loan request contracts.
+        </p>
+        <p>
+            The module can be demo through this link <a class="text-center" href="http://chandlercalderon.com:2424/web#view_type=list&model=sale.credit.request&menu_id=340&action=487"><u>link</u></a>.
+            <ul>
+                <li>Username: demo</li>
+                <li>Password: demo</li>
+            </ul>
+        </p>
+        <a href="https://github.com/chancald/credit_request"><img class="social" src="{% static 'images/github-logo.png' %}" height="50px" alt="Github logo"></a>
+    </div>
+</div>
+{% endblock %}

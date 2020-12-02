@@ -1,181 +1,124 @@
+{% extends 'home/base.html' %}
 {% load static %}
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Home</title>
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark border-bottom">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="#home-section" class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about-section" class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects-section" class="nav-link" href="/projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact-section" class="nav-link" href="/contact">Contact</a>
-                </li>
+{% block title %}Home{% endblock %}</title>
+
+{% block content %}
+<div id="home-section" class="fade-in">
+    <div id="home-left">
+        <video width="250" playsinline autoplay muted loop>
+            <source src="{% static 'video/hello_edited.mp4' %}" type="video/mp4">
+        </video>
+        <div id="email">
+            chandler.calderon@gmail.com
+        </div>
+        <div>
+            <a href="https://github.com/chancald">
+                <img src="{% static 'images/github-logo.png' %}" height="30px" alt="Github logo">
+            </a>
+            <a href="https://www.linkedin.com/in/chandler-calderon-813768144/">
+                <img src="{% static 'images/linkedin-logo.png' %}" height="30px" alt="Linkedin logo">
+            </a>
+        </div>
+
+    </div>
+
+    <div id="home-center">
+        <p>Hi, I'm a Software Developer interested in Computer Science and Artificial Intelligence.
+        </p>
+        <p>
+            Currently, I am:
+            <ul>
+                <li>Working as a Python Developer designing, developing and maintaining ERP software.</li>
+                <li>Completing a MS in Data Science with a Computer Science concentration.</li>
             </ul>
-        </div>
-    </nav>
-    
-    <div id="home-section" class="container-md" style="padding-top:70px; margin-bottom:400px; margin-top:100px">
-        <div class="row text-center">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <p class="display-3">Hi, I'm <t class="font-weight-bold">Chandler</t>
-                </p>
-                <p class="display-4">a Software Developer.</p>
-                <p>
-                    <a href="https://github.com/chancald">
-                        <img src="{% static 'images/github-logo.png' %}" alt="Github logo">
-                    </a>
-                    <a href="https://www.linkedin.com/in/chandler-calderon-813768144/">
-                        <img  src="{% static 'images/linkedin-logo.png' %}" height="60px" alt="Linkedin logo">
-                    </a>
-                </p>
-                <p class="text-center fade-in-out" style="padding-top:50px;">
-                    <img class="fade-in-out" src="https://img.icons8.com/ios-filled/100/000000/chevron-down.png" alt="Chevron animation">
-                </p>
-            </div>
-        </div>
+        </p>
+        <p>
+        </p>
+    </div>
+    <div id="home-right">
+        <p>
+            Here's the technologies I've been working with lately:
+        </p>
+        <ul>
+            <li>Html & CSS</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Data Science Packages (numpy, pandas, matplotlib, scikit-learn, keras, tensorflow)</li>
+            <li>Django</li>
+            <li>Odoo</li>
+            <li>Google Cloud</li>
+        </ul>
     </div>
 
-    <div id="about-section" class="container-sm-fluid bg-dark fade-in" style="padding-top:70px;padding-bottom:70px">
-        <div class="row">
+</div>
+<div id="chevron" >
+    <img src="https://img.icons8.com/ios-filled/100/000000/chevron-down.png" alt="Chevron animation">
+</div>
 
-            <div class="col-sm-3 ml-4 mr-2 mt-3">
-                <div class="">
-                    <img id="profile-pic" src="{% static 'images/profile.jpg' %}" alt="Profile picture">
-                </div>
-            </div>
-            <div class="col-sm-4 mx-3 text-justify" style="color: white;">
-                <p class="display-4 font-weight-bold">About Me</p>
-                <div class="display-5  lead"  style="color: white;">
-                    <p> 
-                        I currently work as a Python Developer, developing ERP open-source software. 
-                        I'm also enrolled in Lewis University completing a MS in Data Science.
-                    </p>
-                    <p>
-                        As a Software Developer I enjoy building things, like this website. 
-                        As a Data Scientist, I enjoy answering research questions. Lately I've been trying
-                        to combine these two interests.
-                    </p>
-                    <span>
-                        <a href="https://drive.google.com/file/d/1_pKgottAEamm8vZZyDtsoCbTIzVcsWxi/view?usp=sharing">
-                            <br/><button type="button" class="btn btn-primary mb-5">
-                                View My Resume
-                            </button>
-                        </a>
-                    </span>
-                </div>
-            </div>
-            
-            <div class="col-sm-3 mx-3 mt-2 display-5 text-justify lead" style="color: white;">
-                <p> 
-                    Here's the technologies I've been working with recently:
-                </p>
-                <ul>
-                    <li>Html & CSS</li>
-                    <li>XML</li>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>Odoo</li>
-                    <li>Postgresql</li>
-                    <li>Google Cloud</li>
-                </ul>
-            </div>
-        </div>
+<div id="projects-section">
+    <div class="header">
+        Projects
+    </div>
+    <div id="column-1" class="text-center">
+        <h4 class="box-header">Odoo Server</h4>
+        <hr>
+        <p>
+            Deployed an Odoo 13 server using a Google Cloud Ubuntu VM instance to showcase and demo Odoo modules.
+            The modules were developed through the Odoo framework using Python, XML and CSV files.
+        </p>
+        <p>
+            This Odoo instance can be accessed through this <a class="text-center" href="http://chandlercalderon.com:2424/"><u>link</u></a>.
+        </p>
+        <ul>
+            <li>Username: demo</li>
+            <li>Password: demo</li>
+        </ul>
+    </div>
+    <div id="column-2" >
+        <h4 class="box-header">Odoo - Credit Request Module</h4>
+        <hr>
+        <p>
+            This custom module allows the creation of credit requests of any product through Odoo's Sales app. The main view is a template
+            with a form with the client's information. The values in the form are used
+            to create reports, like loan request contracts.
+        </p>
+        <p>
+            The module can be demo through this link <a href="http://chandlercalderon.com:2424/web#view_type=list&model=sale.credit.request&menu_id=340&action=487"><u>link</u></a>.
+            <ul>
+                <li>Username: demo</li>
+                <li>Password: demo</li>
+            </ul>
+        </p>
+        <a href="https://github.com/chancald/credit_request"><img class="social" src="{% static 'images/github-logo.png' %}" height="50px" alt="Github logo"></a>
+    </div>
+</div>
+
+<div id="contact-section">
+
+    <div class="header">
+        <p>
+            Contact Me
+        </p>
     </div>
 
-    <div id="projects-section" class="container-sm" style="padding-top:70px; margin-top:200px; margin-bottom:150px; font-size: 20px;">
-        <div><p class="display-4 font-weight-bold text-center" >Projects</p></div>
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10">
-                <div class="m-3 card card-body h-70 border-info shadow text-justify fade-in-4">
-                    <h4 class="text-center">Odoo Server</h4>
-                    <hr>
-                    <p>
-                        Deployed an Odoo 13 server using a Google Cloud Ubuntu VM instance to showcase and demo Odoo modules.
-                        The modules were developed through the Odoo framework using Python, XML and CSV files.
-                    </p>
-                    <p>
-                        This Odoo instance can be accessed through this <a class="text-center" href="http://chandlercalderon.com:2424/"><u>link</u></a>.
-                    </p>
-                    <ul>
-                        <li>Username: demo</li>
-                        <li>Password: demo</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10">
-                <div class="m-3 card card-body h-70 border-info shadow text-justify fade-in-5">
-                    <h4 class="text-center">Odoo - Credit Request Module</h4>
-                    <hr>
-                    <p>
-                        This custom module allows the creation of credit requests of any product through Odoo's Sales app. The main view is a template
-                        with a form with the client's information. The values in the form are used
-                        to create reports, like loan request contracts.
-                    </p>
-                    <p>  
-                        The module can be demo through this link <a class="text-center" href="http://chandlercalderon.com:2424/web#view_type=list&model=sale.credit.request&menu_id=340&action=487"><u>link</u></a>.
-                        <ul>
-                            <li>Username: demo</li>
-                            <li>Password: demo</li>
-                        </ul>
-                    </p>
-                    <a href="https://github.com/chancald/credit_request"><img class="social" src="{% static 'images/github-logo.png' %}" height="50px" alt="Github logo"></a>
-    
-                    
-                       </div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-    </div>
-
-    <div id="contact-section" class="container-sm fade-in" style="padding-top:70px; margin-bottom:200px;">
-        <p class="display-4 mt-3 text-center font-weight-bold">Contact Me</p>
-        <form action="/contact" method="post">
+    <div class="contact-form">
+        <form class="contact-form" action="/contact" method="post">
             {% csrf_token %}
             <div class="form-group">
-            <label for="exampleFormControlInput1">Name</label>
-            <input type="name" class="form-control" id="name" name="name" placeholder="Your name">
+                <label for="name">Name</label>
+                <input type="name" class="form-control" id="name" name="name" placeholder="Your name">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
+                <label for="email">Email address</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
             </div>
             <div class="form-group">
-            <label for="text">Message</label>
-            <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+                <label for="desc">Message</label>
+                <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-success">Send</button>
+            <button type="submit" class="btn">Send</button>
         </form>
     </div>
 
-</body>
-</html>
-  
+</div> -->
+{% endblock %}
