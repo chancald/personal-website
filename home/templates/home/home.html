@@ -22,103 +22,33 @@
 
     </div>
 
-    <div id="home-center">
-        <p>Hi, I'm a Software Developer interested in Computer Science and Artificial Intelligence.
+    <div id="home-right">
+        <p>Hi, I'm a Software Developer interested in <u>Computer Science</u> and <u>Artificial Intelligence</u>.
         </p>
         <p>
             Currently, I am:
             <ul>
-                <li>Working as a Python Developer designing, developing and maintaining ERP software.</li>
-                <li>Completing a MS in Data Science with a Computer Science concentration.</li>
+                <li>Working as a <u>Python Developer</u> designing, developing and maintaining ERP software.</li>
+                <li>Completing a MS in <u>Data Science</u> with a Computer Science concentration.</li>
             </ul>
         </p>
-        <p>
-        </p>
-    </div>
-    <div id="home-right">
-        <p>
-            Here's the technologies I've been working with lately:
-        </p>
-        <ul>
-            <li>Html & CSS</li>
-            <li>Javascript</li>
-            <li>Python</li>
-            <li>Data Science Packages (numpy, pandas, matplotlib, scikit-learn, keras, tensorflow)</li>
-            <li>Django</li>
-            <li>Odoo</li>
-            <li>Google Cloud</li>
-        </ul>
-    </div>
-
-</div>
-<div id="chevron" >
-    <img src="https://img.icons8.com/ios-filled/100/000000/chevron-down.png" alt="Chevron animation">
-</div>
-
-<div id="projects-section">
-    <div class="header">
-        Projects
-    </div>
-    <div id="column-1" class="text-center">
-        <h4 class="box-header">Odoo Server</h4>
-        <hr>
-        <p>
-            Deployed an Odoo 13 server using a Google Cloud Ubuntu VM instance to showcase and demo Odoo modules.
-            The modules were developed through the Odoo framework using Python, XML and CSV files.
-        </p>
-        <p>
-            This Odoo instance can be accessed through this <a class="text-center" href="http://chandlercalderon.com:2424/"><u>link</u></a>.
-        </p>
-        <ul>
-            <li>Username: demo</li>
-            <li>Password: demo</li>
-        </ul>
-    </div>
-    <div id="column-2" >
-        <h4 class="box-header">Odoo - Credit Request Module</h4>
-        <hr>
-        <p>
-            This custom module allows the creation of credit requests of any product through Odoo's Sales app. The main view is a template
-            with a form with the client's information. The values in the form are used
-            to create reports, like loan request contracts.
-        </p>
-        <p>
-            The module can be demo through this link <a href="http://chandlercalderon.com:2424/web#view_type=list&model=sale.credit.request&menu_id=340&action=487"><u>link</u></a>.
+        <p>Lately I've been working with the following technologies:
             <ul>
-                <li>Username: demo</li>
-                <li>Password: demo</li>
+                <li><u>Python</u> (numpy, pandas, matplotlib, scikit-learn, keras)</li>
+                <li><u>Django</u></li>
+                <li><u>Odoo</u></li>
+                <li><u>Html & CSS</u></li>
+                <li><u>Javascript</u></li>
+                <li><u>Google Cloud</u></li>
             </ul>
         </p>
-        <a href="https://github.com/chancald/credit_request"><img class="social" src="{% static 'images/github-logo.png' %}" height="50px" alt="Github logo"></a>
     </div>
 </div>
 
-<div id="contact-section">
-
-    <div class="header">
-        <p>
-            Contact Me
-        </p>
-    </div>
-
-    <div class="contact-form">
-        <form class="contact-form" action="/contact" method="post">
-            {% csrf_token %}
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="name" class="form-control" id="name" name="name" placeholder="Your name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-                <label for="desc">Message</label>
-                <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn">Send</button>
-        </form>
-    </div>
-
+<!-- <div id="chevron" >
+    <img src="https://img.icons8.com/ios-filled/100/000000/chevron-down.png" alt="Chevron animation">
 </div> -->
+
+
+
 {% endblock %}

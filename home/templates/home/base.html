@@ -7,16 +7,18 @@
     <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static '/js/app.js' %}"></script>
     <title>{% block title %}Home{% endblock %}</title>
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-            <li><a id="nav-logo" href="#home-section">Chandler Calderon</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#projects-section">Projects</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-        </ul>
+    <nav class="navbar" id="myNav">
+        <a id="nav-logo" class="active" href="/">Chandler Calderon</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="clickNav()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
     {% block content %}{% endblock %}
 </body>
