@@ -160,11 +160,11 @@ padding: 0px 0px 0px 0px;
 } */
 
 #projects-section {
-  height: 50rem;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   font-size: 18px;
+  margin-bottom: 50px;
 }
 
 .header {
@@ -183,19 +183,8 @@ padding: 0px 0px 0px 0px;
   text-align: center;
 }
 
-#projects-section #column-1 {
+#project {
   height: auto;
-  min-width: 280px;
-	max-width: 550px;
-  padding: 25px;
-  margin: 18px;
-  text-align: justify;
-  border-style: ridge;
-  border-color: black;
-  border-radius: 4%;
-  box-shadow: 5px 10px #888888;
-}
-#projects-section #column-2 {
   min-width: 280px;
 	max-width: 550px;
   padding: 25px;
