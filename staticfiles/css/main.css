@@ -118,46 +118,6 @@ nav a:hover {
 .text-center {
   text-align: center;
 }
-/* #about-section li:hover {
-  background-color: red;
-  width: 28%;
-  border-radius: 20%;
-}
-#about-me-text:hover {
-  background-color: green;
-  width: 55%;
-  border-radius: 20%;
-} */
-
-/* #about-section #profile-pic {
-width: 450px;
-height: 400px;
-padding: 0px 0px 0px 0px;
-}
-
-#about-section #profile-pic img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  padding: 0px 20px 20px 20px;
-}
-
-#about-section #column-1 {
-  color: white;
-  width: 500px;
-  height: auto;
-  padding: 0px 25px 0px 25px;
-}
-
-#about-section #column-2 {
-  color: white;
-  width: 600px;
-  height: auto;
-  padding: 0px 25px 0px 25px;
-} */
-/* #profile-pic:hover {
-  transform: scale(1.2);
-} */
 
 #projects-section {
   display: flex;
