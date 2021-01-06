@@ -98,23 +98,6 @@ nav a:hover {
 	max-width: 720px;
 }
 
-/* #chevron {
-  text-align: center;
-  padding-top: 50px;
-  animation-duration: 3s;
-  animation-name: fade-in-out;
-  animation-iteration-count: infinite;
-} */
-
-/* #about-section {
-  margin: 100px 0px 100px 0px;
-  padding: 100px 0px 50px 0px;
-  background-color: #3a3f44;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-} */
-
 .text-center {
   text-align: center;
 }
